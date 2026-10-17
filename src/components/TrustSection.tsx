@@ -49,7 +49,7 @@ export default function TrustSection() {
     // Tall container — 3× viewport height creates the scroll budget
     <div ref={containerRef} style={{ height: "300vh" }}>
       {/* Sticky inner — locks to screen while user scrolls through budget */}
-      <div className="sticky top-0 h-screen bg-[#4d7f85] flex overflow-hidden">
+      <div className="sticky top-0 h-screen bg-[#1a1a4e] flex overflow-hidden">
 
         {/* ── LEFT: Polaroid stack ── */}
         <div className="w-full md:w-1/2 relative flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function TrustSection() {
           >
             <PolaroidCard
               caption="el equipo"
-              gradient="bg-gradient-to-br from-[#3a6a78] to-[#1e3a4a]"
+              gradient="bg-gradient-to-br from-[#6b2fa0] to-[#1a1a4e]"
             />
           </div>
 
@@ -77,7 +77,7 @@ export default function TrustSection() {
           >
             <PolaroidCard
               caption="con pasión"
-              gradient="bg-gradient-to-br from-[#5a8870] to-[#3a6050]"
+              gradient="bg-gradient-to-br from-[#3d2080] to-[#6b2fa0]"
             />
           </motion.div>
 
@@ -93,7 +93,7 @@ export default function TrustSection() {
           >
             <PolaroidCard
               caption="con confianza"
-              gradient="bg-gradient-to-br from-[#7aa8b0] to-[#4a7885]"
+              gradient="bg-gradient-to-br from-[#c9a227] to-[#8a6a10]"
             />
           </motion.div>
         </div>
@@ -115,7 +115,7 @@ export default function TrustSection() {
           {/* Script + caps layered heading */}
           <div className="mb-6 text-left">
             <p
-              className="font-[family-name:var(--font-script)] text-[#7cd9d0] leading-none -mb-2"
+              className="font-[family-name:var(--font-script)] text-[#c9a227] leading-none -mb-2"
               style={{ fontSize: "clamp(2.5rem, 4.5vw, 4.5rem)" }}
             >
               Confiable
@@ -124,7 +124,7 @@ export default function TrustSection() {
               className="font-[family-name:var(--font-bodoni)] text-white uppercase tracking-tight leading-[1.05] text-center"
               style={{ fontSize: "clamp(1.6rem, 3vw, 3rem)" }}
             >
-              En ViajesBO, la confianza es todo
+              En Amazona Travel, la confianza es todo
             </h3>
           </div>
 

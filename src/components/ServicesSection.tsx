@@ -66,7 +66,7 @@ function TealCard({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="bg-[#4d7f85] flex flex-col items-center justify-center text-center px-10 py-20 md:py-28"
+      className="bg-[#1a1a4e] flex flex-col items-center justify-center text-center px-10 py-20 md:py-28"
     >
       <p className="text-white/90 text-base md:text-lg leading-relaxed max-w-sm">
         {text}
@@ -141,7 +141,7 @@ export default function ServicesSection() {
 
           <PhotoCard
             title="Yates"
-            gradient="bg-gradient-to-br from-[#1e3a4a] via-[#2a5060] to-[#1a3040]"
+            gradient="bg-gradient-to-br from-[#6b2fa0] via-[#2d1a6e] to-[#1a1a4e]"
             delay={0.1}
           />
 

@@ -50,7 +50,7 @@ export default function IntroSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="font-[family-name:var(--font-script)] text-[#6baab0] -mt-3 ml-4 leading-[1.1]"
+          className="font-[family-name:var(--font-script)] text-[#c9a227] -mt-3 ml-4 leading-[1.1]"
           style={{ fontSize: "clamp(2.6rem, 7.5vw, 6.5rem)" }}
         >
           Quédate por la experiencia
@@ -82,7 +82,7 @@ export default function IntroSection() {
             {["IATA", "ASTA", "CLIA"].map((badge) => (
               <span
                 key={badge}
-                className="inline-flex items-center justify-center px-2 py-1 bg-[#4d7f85]/20 text-[#4d7f85] text-[10px] tracking-widest font-bold rounded-sm"
+                className="inline-flex items-center justify-center px-2 py-1 bg-[#c9a227]/15 text-[#c9a227] text-[10px] tracking-widest font-bold rounded-sm"
               >
                 {badge}
               </span>
@@ -104,7 +104,7 @@ export default function IntroSection() {
           <motion.a
             variants={fadeUp}
             href="#explore"
-            className="mt-8 text-[#1a3040] text-sm font-semibold tracking-wide border-b border-[#1a3040] pb-0.5 hover:border-[#6baab0] hover:text-[#6baab0] transition-colors duration-300"
+            className="mt-8 text-[#1a1a4e] text-sm font-semibold tracking-wide border-b border-[#1a1a4e] pb-0.5 hover:border-[#c9a227] hover:text-[#c9a227] transition-colors duration-300"
           >
             Explorar nuestros servicios
           </motion.a>
@@ -124,7 +124,7 @@ export default function IntroSection() {
           >
             {/* Photo placeholder — swap with <Image> once you have assets */}
             <div
-              className="w-full bg-gradient-to-br from-[#4d7f85] via-[#2a5f6a] to-[#1a3040]"
+              className="w-full bg-gradient-to-br from-[#6b2fa0] via-[#2d1a6e] to-[#1a1a4e]"
               style={{ aspectRatio: "4/3" }}
             >
               {/*

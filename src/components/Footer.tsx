@@ -75,7 +75,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e2d40] min-h-screen flex flex-col px-8 md:px-14 lg:px-16 pt-20 pb-10">
+    <footer className="bg-[#1a1a4e] min-h-screen flex flex-col px-8 md:px-14 lg:px-16 pt-20 pb-10">
 
       {/* ── Top: large caps + script headline ── */}
       <div className="flex-1 flex flex-col justify-center mb-12">
@@ -86,7 +86,7 @@ export default function Footer() {
           Asegura que tu viaje sea
         </h2>
         <p
-          className="font-[family-name:var(--font-script)] text-[#7cd9d0] leading-[1.1] -mt-2"
+          className="font-[family-name:var(--font-script)] text-[#c9a227] leading-[1.1] -mt-2"
           style={{ fontSize: "clamp(3rem, 9vw, 8.5rem)" }}
         >
           inolvidable
@@ -102,7 +102,7 @@ export default function Footer() {
             +591 700 00 000
           </p>
           <p className="font-[family-name:var(--font-bodoni)] text-white uppercase text-xl lg:text-2xl tracking-wide mb-4">
-            INFO@VIAJESBO.COM
+            INFO@AMAZONATRAVEL.COM
           </p>
 
           {/* Social icons */}
@@ -114,7 +114,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="text-white/50 hover:text-[#7cd9d0] transition-colors duration-300"
+                className="text-white/50 hover:text-[#c9a227] transition-colors duration-300"
               >
                 {s.icon}
               </a>
@@ -128,7 +128,7 @@ export default function Footer() {
             <span className="text-white/25 text-xs">Diseño Web Bolivia</span>
           </div>
           <p className="text-white/25 text-xs max-w-xs leading-relaxed">
-            © {new Date().getFullYear()} ViajesBO. Todos los derechos reservados.
+            © {new Date().getFullYear()} Amazona Travel. Todos los derechos reservados.
           </p>
         </div>
 

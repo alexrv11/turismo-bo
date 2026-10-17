@@ -30,7 +30,7 @@ export default function HeroSection() {
           src="/videos/hero.mp4"
         />
       */}
-      <div className="absolute inset-0 bg-[#1e3a4a]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#1a1a4e] via-[#2d1a6e] to-[#1a1a4e]" />
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/40" />
@@ -46,7 +46,7 @@ export default function HeroSection() {
         <motion.h1
           variants={itemVariants}
           className="font-[family-name:var(--font-bodoni)] text-white uppercase leading-[1.05] tracking-tight"
-          style={{ fontSize: "clamp(2.8rem, 8vw, 7rem)" }}
+          style={{ fontSize: "clamp(1.8rem, 5vw, 4.5rem)" }}
         >
           Para la Mejor
           <br />
@@ -56,10 +56,10 @@ export default function HeroSection() {
         {/* Script / cursive line in mint */}
         <motion.p
           variants={itemVariants}
-          className="font-[family-name:var(--font-script)] text-[#7cd9d0] leading-[1.1] -mt-2"
-          style={{ fontSize: "clamp(3rem, 9vw, 8rem)" }}
+          className="font-[family-name:var(--font-script)] text-[#c9a227] leading-[1.1] -mt-2"
+          style={{ fontSize: "clamp(2rem, 6vw, 5.5rem)" }}
         >
-          Reserva con ViajesBO
+          Reserva con Amazona Travel
         </motion.p>
 
         {/* Subtitle */}

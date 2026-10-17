@@ -16,7 +16,7 @@ const ticker = items.map((item) => `${item} ✦`).join("  ");
 
 export default function AboutSection() {
   return (
-    <section className="relative bg-[#4d7f85] overflow-hidden py-32">
+    <section className="relative bg-[#1a1a4e] overflow-hidden py-32">
       {/* Script overlay — centered, floats above marquee */}
       <motion.div
         className="relative z-10 text-center mb-4 pointer-events-none select-none"
@@ -26,7 +26,7 @@ export default function AboutSection() {
         transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         <p
-          className="font-[family-name:var(--font-script)] text-[#7cd9d0] leading-none"
+          className="font-[family-name:var(--font-script)] text-[#c9a227] leading-none"
           style={{ fontSize: "clamp(3rem, 9vw, 8rem)" }}
         >
           Confía en

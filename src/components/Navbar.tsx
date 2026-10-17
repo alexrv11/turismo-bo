@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuLinks = [
@@ -19,46 +20,41 @@ export default function Navbar() {
   return (
     <>
       {/* ── Fixed header bar ── */}
-      <header className="fixed top-0 left-0 right-0 z-50 p-5 md:p-6 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-50 p-4 md:p-5 flex items-center justify-between">
 
-        {/* Menu pill — left */}
+        {/* Menu button — icon circle on mobile, pill on desktop */}
         <button
           onClick={() => setMenuOpen(true)}
-          className="flex items-center gap-3 bg-[#4d7f85] text-white px-5 py-3.5 rounded-full text-sm tracking-[0.25em] uppercase font-medium hover:bg-[#3d6e72] transition-colors duration-300"
+          className="flex items-center justify-center w-11 h-11 md:w-auto md:h-auto rounded-full border border-[#c9a227]/40 bg-[#1a1a4e] md:gap-3 md:px-5 md:py-3.5 text-white text-sm tracking-[0.25em] uppercase font-medium hover:border-[#c9a227] hover:bg-[#12123a] transition-colors duration-300"
         >
-          {/* Wave SVG icon */}
-          <svg width="32" height="18" viewBox="0 0 32 18" fill="none" className="flex-shrink-0">
-            <path d="M1 3 Q5.5 0.5 9 3 Q12.5 5.5 16 3 Q19.5 0.5 23 3 Q26.5 5.5 31 3"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
-            <path d="M1 9 Q5.5 6.5 9 9 Q12.5 11.5 16 9 Q19.5 6.5 23 9 Q26.5 11.5 31 9"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
-            <path d="M1 15 Q5.5 12.5 9 15 Q12.5 17.5 16 15 Q19.5 12.5 23 15 Q26.5 17.5 31 15"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
+          <svg width="20" height="14" viewBox="0 0 22 16" fill="none" className="flex-shrink-0">
+            <line x1="0" y1="2"  x2="22" y2="2"  stroke="#c9a227" strokeWidth="1.8" strokeLinecap="round"/>
+            <line x1="0" y1="8"  x2="22" y2="8"  stroke="#c9a227" strokeWidth="1.8" strokeLinecap="round"/>
+            <line x1="0" y1="14" x2="22" y2="14" stroke="#c9a227" strokeWidth="1.8" strokeLinecap="round"/>
           </svg>
-          MENÚ
+          <span className="hidden md:inline">MENÚ</span>
         </button>
 
         {/* Center logo */}
-        <a
-          href="#"
-          className="font-[family-name:var(--font-script)] text-white text-4xl leading-none drop-shadow-md"
-        >
-          ViajesBO
+        <a href="#" className="flex items-center">
+          <Image
+            src="/logo_v2.png"
+            alt="Amazona Travel"
+            width={120}
+            height={80}
+            className="w-25 md:w-[120px] object-contain drop-shadow-lg"
+            priority
+          />
         </a>
 
-        {/* Reserve pill — right */}
+        {/* Reserve button — icon circle on mobile, pill on desktop */}
         <a
           href="#contact"
-          className="flex items-center gap-3 bg-[#4d7f85] text-white px-5 py-3.5 rounded-full text-sm tracking-[0.25em] uppercase font-medium hover:bg-[#3d6e72] transition-colors duration-300"
+          className="flex items-center justify-center w-11 h-11 md:w-auto md:h-auto rounded-full bg-[#c9a227] md:gap-3 md:px-5 md:py-3.5 text-[#1a1a4e] text-sm tracking-[0.25em] uppercase font-bold hover:bg-[#b8911f] transition-colors duration-300"
         >
-          RESERVAR
-          <svg width="32" height="18" viewBox="0 0 32 18" fill="none" className="flex-shrink-0">
-            <path d="M1 3 Q5.5 0.5 9 3 Q12.5 5.5 16 3 Q19.5 0.5 23 3 Q26.5 5.5 31 3"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
-            <path d="M1 9 Q5.5 6.5 9 9 Q12.5 11.5 16 9 Q19.5 6.5 23 9 Q26.5 11.5 31 9"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
-            <path d="M1 15 Q5.5 12.5 9 15 Q12.5 17.5 16 15 Q19.5 12.5 23 15 Q26.5 17.5 31 15"
-              stroke="#7cd9d0" strokeWidth="1.6" strokeLinecap="round" fill="none"/>
+          <span className="hidden md:inline">RESERVAR</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="flex-shrink-0">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="#1a1a4e" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </a>
       </header>
@@ -85,14 +81,14 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="fixed top-0 left-0 bottom-0 z-[100] bg-[#4d7f85] flex flex-col px-10 md:px-14 pt-5 pb-12"
+              className="fixed top-0 left-0 bottom-0 z-[100] bg-[#1a1a4e] flex flex-col px-10 md:px-14 pt-5 pb-12"
               style={{ width: "min(420px, 65vw)" }}
             >
               {/* Close button — top-left inside drawer, same pill style */}
               <div className="flex items-center justify-start mb-12">
                 <button
                   onClick={() => setMenuOpen(false)}
-                  className="flex items-center gap-2 bg-[#3d6e72] text-white pl-4 pr-5 py-2.5 rounded-full text-xs tracking-[0.2em] uppercase font-medium hover:bg-[#2d5e62] transition-colors duration-300"
+                  className="flex items-center gap-2 bg-[#12123a] text-white pl-4 pr-5 py-2.5 rounded-full text-xs tracking-[0.2em] uppercase font-medium border border-[#c9a227]/30 hover:border-[#c9a227] transition-colors duration-300"
                 >
                   <span className="text-lg leading-none font-light">×</span>
                   CERRAR
@@ -120,7 +116,7 @@ export default function Navbar() {
                       +
                     </span>
                     <span
-                      className="font-[family-name:var(--font-bodoni)] text-white uppercase tracking-tight leading-none group-hover:text-[#7cd9d0] transition-colors duration-300"
+                      className="font-[family-name:var(--font-bodoni)] text-white uppercase tracking-tight leading-none group-hover:text-[#c9a227] transition-colors duration-300"
                       style={{ fontSize: "clamp(1.4rem, 3.5vw, 2.2rem)" }}
                     >
                       {link.label}

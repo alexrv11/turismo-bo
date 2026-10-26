@@ -29,7 +29,7 @@ const PHOTOS = [
     caption: "Cupe Mundo Acuático, Chapare",
   },
   {
-    src: "/cupe/parque acuatico.JPG",
+    src: "/cupe/parque-acuatico.JPG",
     caption: "Parque Acuático Cupe, Ivirgazama",
   },
   {
@@ -37,7 +37,7 @@ const PHOTOS = [
     caption: "Piscinas Naturales — Cupe, Chapare",
   },
   {
-    src: "/cupe/cupe-piscina 2.JPG",
+    src: "/cupe/cupe-piscina-2.JPG",
     caption: "Lagunas — Cupe Mundo Acuático",
   },
   {
@@ -45,7 +45,7 @@ const PHOTOS = [
     caption: "Cupe Mundo Acuático, Ivirgazama",
   },
   {
-    src: "/cupe/cupe-king-kong 2.JPG",
+    src: "/cupe/cupe-king-kong-2.JPG",
     caption: "Cupe Mundo Acuático, Chapare",
   },
   {

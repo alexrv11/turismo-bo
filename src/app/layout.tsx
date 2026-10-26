@@ -23,6 +23,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://amazonas.ventulab.com"),
   title: "Amazona Travel — Agencia de Viajes de Lujo en Bolivia",
   description:
     "Amazona Travel es tu agencia de viajes de lujo en Bolivia. Diseñamos experiencias exclusivas a los destinos más extraordinarios: vuelos, hoteles boutique, paquetes turísticos y transporte VIP.",
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     title: "Amazona Travel — Agencia de Viajes de Lujo en Bolivia",
     description:
       "Amazona Travel: agencia de viajes de lujo en Bolivia. Experiencias extraordinarias para los viajeros más exigentes.",
-    url: "https://turismo.ventulab.com",
+    url: "https://amazonas.ventulab.com",
     siteName: "Amazona Travel",
     locale: "es_BO",
     type: "website",

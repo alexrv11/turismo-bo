@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Center logo */}
         <a href="#" className="flex items-center">
           <Image
-            src="/logo_v2.png"
+            src="/logo_v1.png"
             alt="Amazona Travel"
             width={120}
             height={80}

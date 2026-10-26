@@ -3,12 +3,14 @@
 import { motion } from "framer-motion";
 
 const items = [
-  "VUELOS",
+  "CHAPARE",
+  "RÍOS",
+  "NATURALEZA",
+  "AVENTURA",
+  "SELVA",
   "HOTELES",
-  "YATES",
-  "NOSOTROS",
-  "DESTINOS",
-  "VIAJES",
+  "TRANSPORTE",
+  "COMUNIDADES",
   "EXPERIENCIAS",
 ];
 

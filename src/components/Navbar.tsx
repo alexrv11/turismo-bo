@@ -5,12 +5,11 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuLinks = [
+  { label: "Destinos",         href: "#destinations", expandable: true  },
+  { label: "Paquetes",         href: "#packages",     expandable: true  },
+  { label: "Experiencias",     href: "#explore",      expandable: true  },
+  { label: "Transporte",       href: "#explore",      expandable: false },
   { label: "Nosotros",         href: "#about",        expandable: true  },
-  { label: "Dónde Hospedarse", href: "#destinations", expandable: true  },
-  { label: "Calendario",       href: "#explore",      expandable: false },
-  { label: "Explorar",         href: "#explore",      expandable: true  },
-  { label: "Transporte",       href: "#explore",      expandable: true  },
-  { label: "Ocasiones",        href: "#explore",      expandable: true  },
   { label: "Contacto",         href: "#contact",      expandable: false },
 ];
 

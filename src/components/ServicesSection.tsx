@@ -96,23 +96,18 @@ export default function ServicesSection() {
 
           <TealCard
             delay={0}
-            text="De parejas a familias y grupos. En ViajesBO nos complace presentarte una amplia selección de servicios, cuidadosamente curados para todos los presupuestos, gustos y necesidades."
+            text="De parejas a familias y grupos. En Amazona Travel diseñamos experiencias en el Trópico de Cochabamba: río, selva, aventura y cultura para todos los presupuestos y gustos."
           />
 
-          <PhotoCard
-            title="Vuelos"
-            gradient="bg-gradient-to-br from-[#b8cdd6] to-[#8aadb8]"
-            delay={0.05}
-          />
 
           <PhotoCard
-            title="Viajes Corporativos"
-            gradient="bg-gradient-to-br from-[#5a7a60] to-[#3a5a40]"
+            title="Tours en Río"
+            gradient="bg-gradient-to-br from-[#0e4060] to-[#0a2a3a]"
             delay={0.1}
           />
 
           <PhotoCard
-            title="Paquetes Turísticos"
+            title="Gastronomía Tropical"
             gradient="bg-gradient-to-br from-[#c8a882] to-[#a07850]"
             delay={0.1}
           />
@@ -136,12 +131,12 @@ export default function ServicesSection() {
 
           <TealCard
             delay={0.06}
-            text="Cada paquete incluye traslados, alojamiento y experiencias exclusivas como estándar — con extras como tours privados, guías especializados y catering disponibles bajo pedido."
+            text="Cada paquete incluye traslados, alojamiento y experiencias en el Trópico como estándar — con extras como guías naturalistas, canoas privadas y gastronomía local bajo pedido."
           />
 
           <PhotoCard
-            title="Yates"
-            gradient="bg-gradient-to-br from-[#6b2fa0] via-[#2d1a6e] to-[#1a1a4e]"
+            title="Turismo Comunitario"
+            gradient="bg-gradient-to-br from-[#5a7a60] to-[#3a5a40]"
             delay={0.1}
           />
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -42,7 +43,7 @@ export default function IntroSection() {
           className="font-[family-name:var(--font-bodoni)] text-[#1a3040] uppercase leading-[1.0] tracking-tight"
           style={{ fontSize: "clamp(2.4rem, 7vw, 6rem)" }}
         >
-          Ven por los Destinos
+          Ven por el Trópico
         </motion.h2>
 
         <motion.p
@@ -71,15 +72,15 @@ export default function IntroSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center md:items-start text-center md:text-left"
         >
-          {/* Badge row */}
+          {/* Region badge */}
           <motion.div
             variants={fadeUp}
             className="flex items-center gap-3 mb-8"
           >
             <span className="text-[#1a3040]/50 text-xs tracking-[0.25em] uppercase font-medium">
-              Con la confianza de
+              Trópico de Cochabamba
             </span>
-            {["IATA", "ASTA", "CLIA"].map((badge) => (
+            {["Chapare", "Ivirgazama", "Puerto Villarroel"].map((badge) => (
               <span
                 key={badge}
                 className="inline-flex items-center justify-center px-2 py-1 bg-[#c9a227]/15 text-[#c9a227] text-[10px] tracking-widest font-bold rounded-sm"
@@ -94,19 +95,19 @@ export default function IntroSection() {
             variants={fadeUp}
             className="text-[#1a3040]/75 text-base md:text-lg leading-relaxed max-w-sm"
           >
-            Tu viaje no debería estar lleno de preocupaciones por reservas,
-            traslados y horarios. Usa nuestros servicios de conserjería y
-            nosotros nos encargamos de toda la logística — dejándote libre para
-            disfrutar lo mejor de cada destino.
+            El Trópico de Cochabamba te espera: ríos amazónicos, selva
+            exuberante, comunidades indígenas Yuracaré y el parque acuático
+            más grande del Chapare. Amazona Travel se encarga de toda la
+            logística — tú solo disfruta la aventura.
           </motion.p>
 
           {/* CTA link */}
           <motion.a
             variants={fadeUp}
-            href="#explore"
+            href="#packages"
             className="mt-8 text-[#1a1a4e] text-sm font-semibold tracking-wide border-b border-[#1a1a4e] pb-0.5 hover:border-[#c9a227] hover:text-[#c9a227] transition-colors duration-300"
           >
-            Explorar nuestros servicios
+            Ver paquetes turísticos
           </motion.a>
         </motion.div>
 
@@ -122,26 +123,19 @@ export default function IntroSection() {
             className="bg-white shadow-2xl"
             style={{ padding: "12px 12px 52px 12px", maxWidth: "380px", width: "100%" }}
           >
-            {/* Photo placeholder — swap with <Image> once you have assets */}
-            <div
-              className="w-full bg-gradient-to-br from-[#6b2fa0] via-[#2d1a6e] to-[#1a1a4e]"
-              style={{ aspectRatio: "4/3" }}
-            >
-              {/*
-                Replace with:
-                <Image src="/images/intro-photo.jpg" alt="Viajes BO" fill className="object-cover" />
-              */}
-              <div className="w-full h-full flex items-center justify-center opacity-30">
-                <svg width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth="1">
-                  <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                  <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
+            <div className="w-full relative" style={{ aspectRatio: "4/3" }}>
+              <Image
+                src="/puerto/puerto-villarroel.jpg"
+                alt="Puerto Villarroel, Chapare"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 380px"
+              />
             </div>
 
             {/* Polaroid caption */}
             <p className="font-[family-name:var(--font-script)] text-[#1a3040]/60 text-xl mt-3 ml-1">
-              Ibiza, España
+              Puerto Villarroel, Chapare
             </p>
           </div>
         </motion.div>

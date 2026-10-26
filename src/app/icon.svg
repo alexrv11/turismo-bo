@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Navy background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1a1a4e"/>
+
+  <!-- Gold outer ring -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#c9a227" stroke-width="2.5"/>
+  <!-- Gold inner ring -->
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#c9a227" stroke-width="1"/>
+
+  <!-- Bow arc (left side, curved) -->
+  <path d="M 19 13 C 5 21 5 43 19 51" fill="none" stroke="#c9a227" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bowstring (vertical, taut) -->
+  <line x1="19" y1="13" x2="19" y2="51" stroke="#c9a227" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Arrow shaft -->
+  <line x1="19" y1="32" x2="47" y2="32" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <!-- Arrowhead -->
+  <polygon points="47,32 41,28.5 42,32 41,35.5" fill="#ffffff"/>
+  <!-- Arrow fletching -->
+  <line x1="20" y1="32" x2="24" y2="28" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="20" y1="32" x2="24" y2="36" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

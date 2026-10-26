@@ -1,8 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import IntroSection from "@/components/IntroSection";
-import ServicesSection from "@/components/ServicesSection";
 import DestinationsSection from "@/components/DestinationsSection";
+import PackagesSection from "@/components/PackagesSection";
+import ServicesSection from "@/components/ServicesSection";
 import TrustSection from "@/components/TrustSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
@@ -15,8 +16,9 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <IntroSection />
-      <ServicesSection />
       <DestinationsSection />
+      <PackagesSection />
+      <ServicesSection />
       <TrustSection />
       <AboutSection />
       <ContactSection />

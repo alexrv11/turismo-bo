@@ -12,27 +12,27 @@ interface Destination {
 
 const destinations: Destination[] = [
   {
-    name: "Caribe",
-    subtitle: "Islas & Playas",
+    name: "Cupe Mundo Acuático",
+    subtitle: "Aventura & Familia",
     tagline:
-      "Aguas cristalinas, arenas blancas y resorts ultra-exclusivos en las islas más privilegiadas.",
-    gradient: "from-[#0a2a3a] via-[#0e4060] to-[#0a2a3a]",
+      "El parque acuático más grande del Chapare: +20 hectáreas de lagunas, toboganes, tirolesas, dinosaurios gigantes y refugio de animales en plena selva tropical.",
+    gradient: "from-[#0a2a1a] via-[#0e5030] to-[#0a2a1a]",
     animation: { x: -40, opacity: 0 },
   },
   {
-    name: "Europa",
-    subtitle: "Cultura & Historia",
+    name: "Puerto Villarroel",
+    subtitle: "Ríos & Naturaleza",
     tagline:
-      "Palacios, ciudades históricas y experiencias gastronómicas en los destinos más refinados del viejo continente.",
-    gradient: "from-[#1a0a2a] via-[#2a1040] to-[#1a0a2a]",
+      "Navega el río Ichilo, avista caimanes y delfines de río, visita playas de arena blanca y comunidades Yuracaré en el puerto fluvial más importante del Trópico.",
+    gradient: "from-[#0a1a2a] via-[#0e304a] to-[#0a1a2a]",
     animation: { y: 40, opacity: 0 },
   },
   {
-    name: "Asia",
-    subtitle: "Misterio & Lujo",
+    name: "Parque Carrasco",
+    subtitle: "Selva & Biodiversidad",
     tagline:
-      "Templos milenarios, playas vírgenes y hoteles de diseño en los rincones más fascinantes de Oriente.",
-    gradient: "from-[#1a1a0a] via-[#2a2010] to-[#1a1a0a]",
+      "622.600 hectáreas de biodiversidad única: jaguares, osos andinos, +850 especies de aves y más de 300 variedades de orquídeas en el corazón de la Amazonia boliviana.",
+    gradient: "from-[#1a1a0a] via-[#2a2a10] to-[#1a1a0a]",
     animation: { x: 40, opacity: 0 },
   },
 ];
@@ -44,10 +44,10 @@ export default function DestinationsSection() {
         {/* Section header */}
         <div className="text-center mb-20">
           <p className="text-[#c9a96e] text-xs tracking-[0.4em] uppercase mb-4 font-[family-name:var(--font-inter)]">
-            Alrededor del mundo
+            Trópico de Cochabamba
           </p>
           <h2 className="font-[family-name:var(--font-cormorant)] text-[#1a1a2e] text-5xl md:text-6xl font-light tracking-wide mb-6">
-            Destinos Exclusivos
+            Nuestros Destinos
           </h2>
           <div className="flex items-center justify-center gap-4">
             <div className="h-px w-16 bg-[#c9a96e]" />

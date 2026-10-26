@@ -23,17 +23,44 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ViajesBO — Experiencias de Viaje Exclusivas",
+  title: "Amazona Travel — Agencia de Viajes de Lujo en Bolivia",
   description:
-    "ViajesBO es tu agencia de viajes de lujo en Bolivia. Diseñamos experiencias exclusivas a los destinos más extraordinarios del mundo: vuelos, hoteles boutique, yates privados y transporte VIP.",
+    "Amazona Travel es tu agencia de viajes de lujo en Bolivia. Diseñamos experiencias exclusivas a los destinos más extraordinarios: vuelos, hoteles boutique, paquetes turísticos y transporte VIP.",
+  keywords: [
+    "agencia de viajes Bolivia",
+    "turismo Bolivia",
+    "viajes de lujo",
+    "Amazona Travel",
+    "paquetes turísticos Bolivia",
+    "Salar de Uyuni",
+    "Lago Titicaca",
+    "turismo aventura Bolivia",
+  ],
+  authors: [{ name: "Amazona Travel" }],
+  creator: "Amazona Travel",
   openGraph: {
-    title: "ViajesBO — Experiencias de Viaje Exclusivas",
+    title: "Amazona Travel — Agencia de Viajes de Lujo en Bolivia",
     description:
-      "Agencia de viajes de lujo. Diseñamos experiencias extraordinarias para los viajeros más exigentes.",
+      "Amazona Travel: agencia de viajes de lujo en Bolivia. Experiencias extraordinarias para los viajeros más exigentes.",
     url: "https://turismo.ventulab.com",
-    siteName: "ViajesBO",
+    siteName: "Amazona Travel",
     locale: "es_BO",
     type: "website",
+    images: [
+      {
+        url: "/hero/cupe.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Amazona Travel — Viajes de Lujo en Bolivia",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amazona Travel — Agencia de Viajes de Lujo en Bolivia",
+    description:
+      "Amazona Travel: agencia de viajes de lujo en Bolivia. Experiencias extraordinarias para los viajeros más exigentes.",
+    images: ["/hero/cupe.jpg"],
   },
 };
 

@@ -13,7 +13,7 @@ export default $config({
   async run() {
     new sst.aws.Nextjs("MyWeb", {
       domain: {
-        name: "turismo.ventulab.com",
+        name: "amazonas.ventulab.com",
       },
     });
   },
